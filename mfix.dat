@@ -103,12 +103,12 @@ Mu_gmax=1.0e4        !Maximum Eulerian (gas) phase viscosity
                                                                                
   COORDINATES           = 'cartesian' 
   XLENGTH               =   10E3                         !width
-  IMAX                  =   200                         !cells in i direction
+  IMAX                  =   100                         !cells in i direction
   YLENGTH               =   20E3                         !height
-  JMAX                  =   400                         !cells in j direction
+  JMAX                  =   200                         !cells in j direction
   NO_K                  = .FALSE.                        !Don't use K? (2D)
   ZLENGTH               =  10E3                     
-  KMAX                  =   200
+  KMAX                  =   100
                                                                                
 ! Gas-phase Section                                                             
   NMAX(0)=2             !Two gas species
@@ -260,9 +260,9 @@ BC_Xw_g(2,2)=0.0
                                                                                 
 
 !Parallel controls (domain decomposition)
-NODESI=8
+NODESI=4
 NODESJ=4
-NODESK=8
+NODESK=4
 
 
 
