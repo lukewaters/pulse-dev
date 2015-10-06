@@ -260,7 +260,7 @@ BC_Xw_g(2,2)=0.0
                                                                                 
 
 !Parallel controls (domain decomposition)
-NODESI=4
+NODESI=8
 NODESJ=4
 NODESK=4
 
