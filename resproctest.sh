@@ -1,4 +1,4 @@
-#PBS -N P128R050m_S
+#PBS -N P128R050m_P
 #PBS -l nodes=2:ppn=64
 #PBS -l walltime=120:00:00
 #PBS -q atlas-6
@@ -11,7 +11,7 @@
 RSH=/usr/bin/rsh
 ##MYMPI=/usr/local/packages/mvapich2/1.9/intel-13.2.146
 MYMPI=/usr/local/mvapich2/1.9/intel-13.2.146
-MYDIR=$HOME/data2/resproctest_Sept2015/P128R050m_S
+MYDIR=$HOME/data2/resproctest_Sept2015/P128R050m_P
 EXE=$MYDIR/plume.exe
 PATH="$MYMPI/bin:$PATH"; export PATH
 
