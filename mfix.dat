@@ -34,7 +34,7 @@ GRAVITY=9.81
 ! Controls for pulsing flow. Make sure all values are specified, and that the number of PARTICLE_INLET_FRAC
 ! Equals the number of MMAX. Also, ensure that the values sum to 1.
 
-MASS_INFLUX_TIME=.TRUE.  !If true, pulse according to variables below. If false use steady conditions in Mass_inflow
+MASS_INFLUX_TIME=.FALSE.  !If true, pulse according to variables below. If false use steady conditions in Mass_inflow
 
 FREQUENCY=1
 MIN_GAS=0.997
@@ -207,13 +207,13 @@ BC_Xw_g(2,2)=0.0
 
 
   BC_U_g(2)             =   0.0                         !radial gas velocity
-  BC_V_g(2)             =   178                         !axial gas velocity
+  BC_V_g(2)             =   186                         !axial gas velocity
   BC_W_g(2)		=   0.0
   BC_U_s(2,1)           =   0.0!50.0                        !radial solids velocity
-  BC_V_s(2,1)           =   178                          !axial solids velocity
+  BC_V_s(2,1)           =   186                          !axial solids velocity
   BC_W_s(2,1)		=  0.0
   BC_U_s(2,2)           =   0.0                         !radial solids velocity
-  BC_V_s(2,2)           =   178                          !axial solids velocity
+  BC_V_s(2,2)           =   186                          !axial solids velocity
   BC_W_s(2,2)		=   0.0
 
   BC_Theta_m(2,1)       =   100			! Granular temperature
